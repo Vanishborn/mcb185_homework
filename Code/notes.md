@@ -29,5 +29,5 @@ alias ls="ls -F"
 alias bb="open -a bbedit"
 ```
 
-save the .zshrc file will allow 
+save the .zshrc file will allow ls to be ls -F and bb to be open -a bbedit
 
