@@ -1,4 +1,5 @@
 #!/bin/bash
+# author: Henry Li and Lisa Yuan
 
 echo "USER: $USER"
 echo "HOME: $HOME"

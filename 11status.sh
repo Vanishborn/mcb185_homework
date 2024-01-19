@@ -1,4 +1,5 @@
 #!/bin/bash
+# author: Henry Li and Lisa Yuan
 
 date
 sh 10env.sh
