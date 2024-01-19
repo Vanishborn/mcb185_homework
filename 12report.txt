@@ -1,0 +1,11 @@
+Tue Jan 16 00:08:59 PST 2024
+USER: lhr
+HOME: /Users/lhr
+SHELL: /bin/zsh
+PWD: /Users/lhr/Developer/UCD/MCB185/Code/mcb185_homework
+PATH: /opt/homebrew/opt/libarchive/bin:/Users/lhr/mambaforge/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin
+Darwin Air.local 23.1.0 Darwin Kernel Version 23.1.0: Mon Oct  9 21:28:31 PDT 2023; root:xnu-10002.41.9~6/RELEASE_ARM64_T8112 arm64
+Python 3.11.6
+/Users/lhr/Developer/UCD/MCB185/Code
+/Users/lhr/Developer/UCD/MCB185/Code/mcb185_homework
+/Users/lhr/Developer/UCD/MCB185/Code/mcb185_homework/.git
