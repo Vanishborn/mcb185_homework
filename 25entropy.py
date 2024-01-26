@@ -35,4 +35,4 @@ def shannon_entropy(a, c, g, t):
 print(shannon_entropy(1, 1, 1, 1))
 print(shannon_entropy(100, 500, 500, 100))
 print(shannon_entropy(40, 10, 30, 7))
-print(shannon_entropy(0, 0, 0, 0))
+# print(shannon_entropy(0, 0, 0, 0))
