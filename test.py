@@ -6,8 +6,14 @@
 
 # print(type(math.pow(2,-2)))
 
-path = ''
+# a = 5.6
+# b = 5.4
+# c = 5.5
 
-with open(path) as fp:
-    for line in fp:
-        
+# print(int(a//1))
+# print(int(b//1))
+# print(int(c//1))
+
+line = 'lol\thellp\thahaha ???'
+line = line.split()
+print(line[0], line[-1])

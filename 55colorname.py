@@ -31,9 +31,9 @@ color_vals = []
 
 with open(color_file_path) as fp:
 	for line in fp:
-		line = line.split('\t')
+		line = line.split()
 		color_names.append(line[0])
-		color_vals.append(line[2].strip())
+		color_vals.append(line[2])
 
 distances = []
 
