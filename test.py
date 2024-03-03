@@ -14,6 +14,10 @@
 # print(int(b//1))
 # print(int(c//1))
 
-line = 'lol\thellp\thahaha ???'
-line = line.split()
-print(line[0], line[-1])
+# line = 'lol\thellp\thahaha ???'
+# line = line.split()
+# print(line[0], line[-1])
+
+# mystring = 'lolhellomeow'
+# mystring2 = mystring[:5]
+# print(mystring2)
