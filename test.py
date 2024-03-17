@@ -21,3 +21,40 @@
 # mystring = 'lolhellomeow'
 # mystring2 = mystring[:5]
 # print(mystring2)
+
+# my_tup = ()
+# print(len(my_tup))
+
+# seq = "AAATTTCCCG"
+# i = 3
+
+# codon = seq[i:i+3]
+
+# print(codon)
+# print(seq[i+3])
+
+# if len(codon) == 3:
+# 	print("OKAY")
+
+a = {}
+b = {}
+
+a[12] = 14
+a[3] = 17
+a[6] = 7
+b[4] = 15
+b[7] = 18
+b[11] = 47
+
+print(a)
+print(b)
+
+c = {}
+
+for k, v in a.items():
+    c[k] = v
+    
+for k, v in b.items():
+    c[k] = v
+
+print(c)

@@ -4,31 +4,34 @@ import sys
 import mcb185
 import dogma
 
-fasta_path = sys.argv[1]
+def is_valid_region(seq, w, threshold):
+	for i in range(len(seq) - w + 1):
+			region = seq[i:i+w]
+			if dogma.KD_ave(region) >= threshold and 'P' not in region:
+				return True
+	return False
 
-tm_proteins = []
+def find_tm_proteins(seqs):
+	tm_proteins = []
 
-for defline, seq in mcb185.read_fasta(fasta_path):
-	if len(seq) <= 40:
-		continue
-
-	name = defline[:60]
-
-	first30 = seq[:30]
-	after30 = seq[30:]
-
-	for i in range(len(first30) - 8 + 1):
-		if name in tm_proteins:
-			break
-		potential_sig_seq = first30[i:i+8]
-		if dogma.KD_ave(potential_sig_seq) < 2.5 or 'P' in potential_sig_seq:
+	for defline, seq in seqs:
+		if len(seq) <= 40 or defline in tm_proteins:
 			continue
-		else:
-			for j in range(len(after30) - 11 + 1):
-				potential_tmreg_seq = after30[j:j+11]
-				if dogma.KD_ave(potential_tmreg_seq) < 2.0 or 'P' in potential_tmreg_seq:
-					continue
-				else:
-					tm_proteins.append(name)
-					print(name)
-					break
+
+		first30 = seq[:30]
+		after30 = seq[30:]
+
+		if is_valid_region(first30, 8, 2.5):
+			if is_valid_region(after30, 11, 2.0):
+				tm_proteins.append(defline)
+			else:
+				continue
+
+	return tm_proteins
+
+seqs = mcb185.read_fasta(sys.argv[1])
+
+tm_proteins = find_tm_proteins(seqs)
+
+for defline in tm_proteins:
+	print(defline[:60])
