@@ -91,6 +91,18 @@
 # testpwm = create_pwm(6)
 # print(len(testpwm))
 
-seq = '1234567890'
-print(seq[-7:])
-print(seq[:-7])
+# seq = '1234567890'
+# print(seq[-7:])
+# print(seq[:-7])
+
+seq = 'ACGTGGTH'
+
+
+def to_lower(nt):
+	nts = 'ACGT'
+	nts_lower = 'acgt'
+
+	return nts_lower[nts.index(nt)]
+
+for nt in seq:
+	print(to_lower(nt))
