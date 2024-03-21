@@ -36,25 +36,28 @@
 # if len(codon) == 3:
 # 	print("OKAY")
 
-a = {}
-b = {}
+# a = {}
+# b = {}
 
-a[12] = 14
-a[3] = 17
-a[6] = 7
-b[4] = 15
-b[7] = 18
-b[11] = 47
+# a[12] = 14
+# a[3] = 17
+# a[6] = 7
+# b[4] = 15
+# b[7] = 18
+# b[11] = 47
 
-print(a)
-print(b)
+# print(a)
+# print(b)
 
-c = {}
+# c = {}
 
-for k, v in a.items():
-    c[k] = v
+# for k, v in a.items():
+#     c[k] = v
     
-for k, v in b.items():
-    c[k] = v
+# for k, v in b.items():
+#     c[k] = v
 
-print(c)
+# print(c)
+
+pos = 'complement(5683..6459)'
+print(pos.strip(')').split('..')[1])
