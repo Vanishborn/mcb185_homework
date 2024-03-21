@@ -79,3 +79,15 @@ def gc_skew(seq):
 	if c + g == 0:
 		return 0
 	return (g - c) / (g + c)
+
+
+def tm(seq):
+	a = seq.count('A')
+	t = seq.count('T')
+	g = seq.count('G')
+	c = seq.count('C')
+
+	if len(seq) <= 13:
+		return (a + t) * 2 + (g + c) * 4
+	else:
+		return 64.9 + 41 * (g + c - 16.4) / (a + t + g + c)

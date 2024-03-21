@@ -59,5 +59,38 @@
 
 # print(c)
 
-pos = 'complement(5683..6459)'
-print(pos.strip(')').split('..')[1])
+# pos = 'complement(5683..6459)'
+# print(pos.strip(')').split('..')[1])
+
+# mystr = '1.1304e+06'
+# print(type(type(mystr)))
+
+# if type(mystr) == "<class 'str'>":
+#     print('yes')
+# else:
+#     print('no')
+
+
+# i = 0
+
+# while i < 6:
+# 	print('yes')
+# 	i += 1
+
+
+# def create_pwm(length):
+# 	pwm = []
+# 	i = 0
+
+# 	while i < length:
+# 		pwm.append({'A': 0, 'C': 0, 'G': 0, 'T': 0})
+# 		i += 1
+
+# 	return pwm
+
+# testpwm = create_pwm(6)
+# print(len(testpwm))
+
+seq = '1234567890'
+print(seq[-7:])
+print(seq[:-7])
